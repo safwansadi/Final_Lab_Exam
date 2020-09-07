@@ -29,7 +29,7 @@
                 <a href="./EmployeeRegistration.php" class="patient_register">Register</a>
                 <?php 
                     if(isset($_POST['patient_login'])){
-                        $connection = mysqli_connect('127.0.0.1', 'root', '', 'docpatportal');
+                        $connection = mysqli_connect('127.0.0.1', 'root', '', 'Employee_info');
                             $result = mysqli_query($connection, 'select * from mainemployee');
                                 $flag=0;
                                 while($data = mysqli_fetch_assoc($result)) {
