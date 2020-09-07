@@ -30,7 +30,7 @@
                 <?php 
                     if(isset($_POST['patient_login'])){
                         $connection = mysqli_connect('127.0.0.1', 'root', '', 'docpatportal');
-                            $result = mysqli_query($connection, 'select * from patient_info');
+                            $result = mysqli_query($connection, 'select * from mainemployee');
                                 $flag=0;
                                 while($data = mysqli_fetch_assoc($result)) {
                                     
